@@ -26,7 +26,7 @@ class Modulus_test(unittest.TestCase):
     def test_positive(self):
         self.assertEqual(self.mod.is_positive(2, 2), True)
 ```
-- A test is run using ```python -m unittest discover -v``` inside the terminal (Fail Expected)
+- A test is run using ```pytest -v``` inside the terminal (Fail Expected)
 - Then, the code is built inside the <file_name> file to satisfy the test
 ```
 # Modulus class is defined
@@ -42,4 +42,4 @@ class Modulus:
             return False
 ```
 
-- The test is rerun using ```python -m unittest discover -v``` inside the terminal (Success Expected)
+- The test is rerun using ```pytest -v``` inside the terminal (Success Expected)
